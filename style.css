@@ -1,0 +1,875 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul ul {
+    position: absolute;
+    top: 50px;
+    display: none;
+}
+
+ul li:hover > ul {
+    display: block;
+}
+
+ul ul li {
+    max-width: 160px;
+    float: none;
+    display: list-item;
+    position: relative;
+    list-style: none;
+}
+ul ul li a {
+    border:1px solid rgba(0,0,0,.15);
+    width: 150px;
+    display: list-item;
+    float: none;
+    position: relative;
+    background-color: #ccc;
+    color: #212529;
+}
+
+
+
+.fa-angle-down {
+   font-size: 0.8rem;
+   margin-left: 0.5rem;
+}
+
+.fa-chevron-right {
+    font-size: 1.2rem;
+    position: relative;
+    vertical-align: middle;
+    margin-left: 0.5rem; 
+
+}
+
+.fa-angle-right {
+  font-size: 1rem;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+}
+
+.fa-play {
+    margin-left: 0.3rem;
+}
+
+
+.main-header__brand {
+    text-decoration: none;
+    font-weight: bold;
+    height: 2.5rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-header__brand img {
+    height: 100%;
+}
+
+ .main-header__title {
+    display: inline-block;
+    margin-left: 1rem;
+    vertical-align: top;
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Lato', sans-serif;
+} 
+
+.main-header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(0,13,255);
+    background: linear-gradient(350deg, rgba(0,13,255,1) 9%, rgba(107,115,255,1)91%);
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mobile__logo {
+    width: 100%;
+    max-width: 400px;
+    margin-left: 20rem;
+}
+
+.main-nav {
+    display: inline-block;
+    /* text-align: right; */
+    /* width: calc(100%-122px); */
+    vertical-align: middle;
+}
+
+.main-nav__items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-right: 8rem;
+}
+
+.main-nav__item {
+    display: inline-block;
+    margin: 0 8px;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+}
+
+.main-nav__item a {
+    text-decoration: none;
+    color: white;
+    padding: 3px 0;
+    font-size: bold;
+}
+
+.main-nav__item a:hover,
+.main-nav__item a:active {
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+
+
+#background__logo {
+   width: 100%;
+   max-width: 200px;
+   margin-left: 10rem;    
+}
+
+.mobile__logo {
+    width: 100%;
+    margin-left: 50rem;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+} 
+
+.product-overview {
+    background: rgb(0,13,255);
+    width: 100%;
+    margin-bottom: 2rem;
+     height: 570px; 
+    padding-top: 100px;
+    border-bottom-left-radius: 48px;
+    border-bottom-right-radius: 48px;
+    background: linear-gradient(350deg,rgba(0,13,255,1) 9%, rgba(107,115,255,1) 91%);
+}
+
+
+
+.user__logo {
+    float: right;
+    margin-right: 8rem;
+}
+
+
+.para__title {
+   margin-top: 5rem;
+   margin-left: 7rem;
+   color: white;
+   font-size: 1.5rem;
+   font-family: 'Lato', sans-serif;
+}
+
+.para__tagline {
+  margin-left: 7rem;
+  margin-top: 1.5rem;
+  color: white;
+  font-size: 1.5rem;
+  font-family: 'Lato', sans-serif;
+}
+
+#tagline {
+    font-size: 2rem;
+}
+
+.grid__google__play {
+    display: flex;
+    flex-direction: row;
+}
+
+.para__tagline1 {
+    margin-left: 7rem;
+    margin-top: 1.5rem;
+    color: white;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;   
+}
+
+.searchbar {
+    width: 350px;
+    padding: 1px 15px;
+    border-radius: 22px;
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fff;
+    margin-left: 6rem;
+    margin-top: 1rem;
+}
+.searchbar input {
+    flex: 1;
+    height: 44px;
+    border: none;
+    font-size: 16px;
+}
+.searchbar input:focus {
+    outline: none;
+}
+
+
+.btn-google_play {
+  margin-left: 1rem;
+  margin-top: 1rem;
+  background-color: blue;
+  color: white;
+  opacity: 0.9;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 110px;
+  padding: 8px;
+  outline: none;
+  border: 2px solid  white; 
+} 
+
+.google__play__store__icon {
+    float: right;
+}
+
+
+.course__info {
+    margin-left: 1rem;
+    /* border-width: 100%; */
+    /* border-top: lawngreen; */
+    margin-right: 1.2rem;
+}
+
+.course__overview {
+    margin-left: 3rem;
+    margin-right: 1rem;
+    font-family: sans-serif;
+}
+
+.course__description {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -5px;
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    border-width: 0 2px 2px 2px;
+    border-style:solid;
+    border-color: #E9EBFF;
+    padding-bottom: 15px;
+    margin-bottom: 2rem;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.course__image1 {
+    padding: 5px;
+    width: 100%;
+    max-width: 100px;
+    height: 100px;
+    margin-left: 4rem;
+    margin-right: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.course__image2 {
+    padding: 5px;
+    width: 100%;
+    max-width: 100px;
+    height: 100px;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+.course__image3 {
+    padding: 5px;
+    width: 100%;
+    max-width: 100px;
+    height: 100px;
+    margin-left: 0.5rem;
+    margin-bottom: 1rem;
+}
+.course__image4 {
+    padding: 5px;
+    width: 100%;
+    max-width: 100px;
+    height: 100px;
+    margin-left: 0.5rem;
+}
+.course__image5 {
+    padding: 5px;
+    width: 100%;
+    max-width: 100px;
+    height: 100px;
+    margin-left: 1rem;
+}
+
+.course__detail {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 4px 0;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+    border-radius: 20px;
+    margin-top: 1rem;
+    background: rgb(231,238,253);
+    background: linear-gradient(304deg, rgba(231,238,253,1) 9%, rgba(246,252,255,1) 91%);
+}
+.course__heading {
+    text-align: center;
+
+}
+.course__para {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align-last: center;
+}
+
+
+
+/* first book c.s.s below here */
+
+.two__books {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.ncert__logo__Solutions {
+    background: url("./ncert-1\ logo.PNG") no-repeat;
+    background-position: right;
+}
+
+.ncert__logo__exempler {
+    background: url("./ncert-2\ \(2\).PNG") no-repeat;
+    background-position: right;
+}
+
+.IIT__logo {
+    background: url("./iit_jee_logo\ \(3\).PNG") no-repeat;
+    background-position: right;
+} 
+
+.grid__ncert__solutions {
+    border: 1px solid #E9EBFF;
+    width: 100%;
+    max-width: 620px;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+}
+.grid__ncert__sols {
+    border-bottom: 1px solid #E9EBFF;
+    padding: 20px;
+     color: #4148EF;
+    text-decoration: underline;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem;
+}
+
+
+  
+.grid__ctr__solutions {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.ncert__sols__classes  {
+    list-style: none;
+    border: 1px solid #E9EBFF;
+    width: 100%;
+    max-width: 285px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin: 0.5rem;
+}
+
+
+.ncert__sols__classes a {
+    text-decoration: none;
+}
+.ncert__sols__class {
+     border: 1px solid #E9EBFF;
+     padding: 10px;
+     background-color: rgb(115,103,240);
+     background: linear-gradient(168.88deg, #CE9FFC 0%, #7367F0 100%);
+     font-family: 'Lato', sans-serif; 
+}
+
+.ncert__sols__class a {
+    color: white;
+}
+
+.ncert__exem__class {
+    border: 1px solid #E9EBFF;
+    padding: 10px;
+    background-color: rgb(5,180,162);
+    background: linear-gradient(168.88deg, #8AE6DC 0%, #00B3A0 100%);
+    font-family: 'Lato', sans-serif;
+}
+
+.ncert__exem__class a {
+    color: white;
+}
+
+.ncert__sols__books__sols {
+    border-bottom: 1px solid #E9EBFF;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.ncert__sols__books__sols a {
+    color: blue;
+}
+
+.ncert__heading {
+    padding: 3px;
+    background-color: blueviolet;
+    font-size: 1rem;
+    opacity: 0.5;
+    padding: 1rem;
+}
+.ncert__heading a {
+    color: white;
+}
+
+.ncert__section1 {
+   padding: 5Spx;
+    color: blue;
+    margin-top: 10px;
+    border-bottom: 1px solid blue;
+}
+.ncert__section1 a {
+    color: blue;
+    background-color: transparent;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.ncert__syllabus {
+    border: 2px solid #E9EBFF;
+    border-radius: 5px;
+}
+
+/* RD SHARMA REFERENCE BOOKS... */
+
+.both__grid__container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.grid__reference__book {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+
+.rdsharma__reference__book {
+    border: 1px solid #E9EBFF;
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 600px;
+    margin-left: 2rem;
+    border-radius: 15px;
+}
+
+.rdsharma__rbook {
+    border-bottom: 2px solid #E9EBFF;
+    padding: 10px;
+    text-decoration: underline;
+    color: blue;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+.books__solu {
+    margin-left: 1rem;
+    list-style: none;
+    border: 1px solid #E9EBFF;
+    width: 100%;
+    max-width: 260px;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+} 
+
+.books__solu a {
+    text-decoration: none;
+    /* border-bottom: 1px solid #E9EBFF; */
+}
+
+.all__referencebooks__solutions {
+    border: 1px solid #E9EBFF;
+    padding: 10px;
+    background-color: blue;
+    font-family: 'Lato', sans-serif;
+}
+
+.all__referencebooks__solutions a {
+    color: white;
+}
+
+.all__referencebooks__classwise {
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #E9EBFF;
+    font-family: 'Lato', sans-serif;
+}
+
+.all__referencebooks__classwise a {
+    color: blue;
+}
+
+
+.PadhegaIndia { 
+    background-color: rgb(128,106,247);
+    background: linear-gradient(335deg, rgba(128,106,247,1) 31%, rgba(207,139,241,1)100%);
+   margin-top: 2rem;
+   margin-bottom: 2rem;
+   height: 100%;
+   min-height: 500px;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.background__image {
+    background: url("./insatosolv-student.png") no-repeat;
+    background-position: right;
+    min-height: 500px;
+    height: 100%; 
+}
+
+.PadhegaIndia__price {
+    margin-left: 7rem;
+    margin-bottom: 4rem;
+    color: white;
+    margin-top: 5rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.padhegaindia__quotes {
+    margin-left: 7rem;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+.padhegaindia__btn {
+   width: 100%;
+   max-width: 180px;
+   margin-left: 7rem;
+   margin-top: 2rem;
+   border-radius: 20px;
+   outline: none;
+   padding: 15px;
+   border: none;
+   background-color: white;
+   color: blue;
+   font-family: 'Lato', sans-serif;
+}
+
+.padhegaindia__btn a {
+    text-decoration: none;
+} 
+
+.cbse {
+    border: 2px solid #E9EBFF;
+    margin-bottom: 2rem;
+    width: 100%;
+    margin: 20px;
+    max-width: 1200px;
+    margin-left: 4rem;
+    border-radius: 20px;
+}
+.cbse h1 {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    text-decoration: underline;
+    font-family: 'Lato', sans-serif;
+}
+.cbse__class {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 10px;
+    color: #4148EF;
+}
+.cbse__class li a {
+    text-decoration: none;
+    list-style: none;
+}
+
+.cbse__classes {
+    padding: 10px;
+    margin-top: 1rem;
+    border: 1px solid #E9EBFF;
+    width: 100%;
+    max-width: 150px;
+    height: 100%;
+    min-height: 100px;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 0.5rem;
+    border-top: 15px solid blue;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    margin-left: 1rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.8rem;  
+}
+
+
+.cbse__new {
+    border: 2px solid #E9EBFF;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: 4rem;
+    border-radius: 20px;
+    margin-top: 3rem;   
+}
+
+.cbse__new h1 {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    text-decoration: underline blue;
+    font-family: 'Lato', sans-serif;
+}
+
+.cbse__syllabus {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    list-style: none;
+}
+
+.cbse__syllabus li a {
+    text-decoration: none;
+}
+
+.cbse__sys {
+    margin-bottom: 0.5rem;
+    border: 2px solid #E9EBFF;
+    width: 310px;
+    margin-top: 1.5rem;
+    background-color: #E9EBFF;
+    /* color: blue; */
+    padding: 10px;
+    margin-left: 4rem;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-family: 'Lato', sans-serif;
+    border-right: 30px solid blue;
+}
+
+.cbse__sys a {
+    color: blue;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.questionofweek {
+    background-color: #ccc;
+    width: 100%;
+    height: 100%;
+    min-height: 800px;
+    margin-top: 2rem;
+    padding: 60px 80px;
+}
+
+.questionweekoftheday {
+    box-shadow: 0 4px 8px 0;
+    background-color: white;
+    width: 100%;
+    max-width: 1100px;
+    height: 100%;
+    min-height: 500px;
+    height: 100%;
+    min-height: 800px;
+    border-radius: 20px;
+    margin-top: 3rem;
+    padding: 60px 80px;
+    margin-left: 2rem;
+}
+
+.topquestion {
+    display: flex;
+    flex-direction: row;
+}
+
+.topquestion h1 {
+    text-decoration: underline;
+    margin-right: 1rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.dropdown__btn {
+    background-color: #4148EF;
+    color: white;
+    padding: 5px;
+    font-size: 0.8rem;
+    border: none;
+    width: 100%;
+    max-width: 150px;
+    margin: 5px;
+    border-radius: 5px;
+    outline: none;
+    top:0;
+    font-family: 'Lato', sans-serif;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown__content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 80px;
+    z-index: 1;
+    margin-left: 0.5rem;
+}
+
+.dropdown__content a {
+    color: black;
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+    font-size: 0.8rem;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown__content {display: block;}
+
+.question__image {
+    margin-top: 150px;
+    width: 90%;
+    margin-left: 15rem;
+}
+
+.footer__part {
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 1250px;
+    height: 100%;
+    min-height: 500px;
+    border: 2px solid #E9EBFF;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    margin-left: 3rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+ 
+.footer__content {
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+
+
+ .footer__part__logo img {
+    height: 4.5rem;
+    width: 4.5rem;
+    margin-top: 2rem;
+    margin-left: 4rem;
+} 
+
+.footer__logoheading {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    vertical-align:top;
+    display: inline-block;
+    margin-top: 3rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.books__solutions {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.books__name {
+    margin-bottom: 1rem;
+    font-family: 'Lato', sans-serif;
+}
+.books__authors {
+    line-height: 1.6;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+}
+
+.flex__booksolutions {
+    display: flex;
+    flex-direction: row;
+}
+
+.book__providers {
+    line-height: 1.2;
+    margin-left: 2rem;
+    margin-top: 0.2rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.company__info {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 10px;
+}
+
+.company__info a {
+    text-decoration: none;
+    padding: 10px;
+    margin: 8px;
+    color: black;
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+    
+}
+
+.copyright {
+    margin-left: 18rem;
+}
+
+
+.ncert__syllabus__books {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.course__headings {
+    padding: 10px;
+}
+
+@media(max-width:750px) {
+    html {
+        font-size: 10px;
+    }
+}
